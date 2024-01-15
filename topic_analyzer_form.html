@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Topic Analyzer</title>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+<body>
+    <h1><b>Fill the News articles below to understand the topic</b></h1>
+    <br>
+    <form action="http://127.0.0.1:5000" method="POST">
+        <label for="article1">Article 1</label>
+        <input type="text" id="article1" name="article1" placeholder="Enter the first news article here" required>
+        <br>
+        <label for="article2">Article 2</label>
+        <input type="text" id="article2" name="article2" placeholder="Enter the next news article" required>
+        <br>
+        <label for="article3">Article 3</label>
+        <input type="text" id="article3" name="article3" placeholder="Enter the next news article here" required>
+        <br>
+        <button type="submit">Check</button>
+    </form>
+</body>
+</html>
